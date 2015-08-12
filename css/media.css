@@ -12,10 +12,6 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-	
-	.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-prev, .carousel-control .icon-next {
-    font-size: 20px;
-	}
 
 	.navbar-default {
 	background-color: #F6F6F6;
@@ -85,44 +81,48 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
-
+.header-caption{
+	max-width: 90%;
+	top: 30%;
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
-	  .nav li a{
-	   	padding: 15px 10px;
-	   }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) { /* 768 AND MORE*/
-	.nav li a{
-	   	padding: 15px 40px;
-	   }
-}
-@media only screen and (min-width : 820px) { 
-	.nav li a{
-	   	padding: 15px 40px;
-	   }
+	.header-caption{
+	max-width: 80%;
+	top: 35%;
+	}
+	.navbar-nav li a{
+		padding: 14px 25px;
+	}
+@media only screen and (min-width : 850px) { 
+	.navbar-nav li a{
+		padding: 14px 25px;
+	}
+	.navbar-default .nav{
+		margin-left: -50px;
+	}
 }
 @media only screen and (min-width : 900px) { 
-	.nav li a{
-	   	padding: 15px 60px;
-	   }
+	.navbar-nav li a{
+		padding: 14px 50px;
+	}
 }
-
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-	.nav li a{
-	   	padding: 15px 70px;
-	   }
+	.navbar-default .nav{
+		margin-left: -120px;
+	}
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
-	.nav li a{
-	   	padding: 15px 90px;
-	   }
+.navbar-default .nav{
+		margin-left: -150px;
+	}
 }
