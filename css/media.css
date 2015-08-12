@@ -45,11 +45,6 @@
 .navbar-default.affix .nav>li>a:focus {
 	border-bottom: 2px solid transparent;
 }
-
-.navbar-default.affix .nav > li>a:hover,
-.navbar-default.affix .nav>li>a:focus:hover {
-	border-color: #087070;
-}
 }
 
 /* Extra Small Devices, Phones */
@@ -95,18 +90,20 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
-	  
+	  .nav li a{
+	   	padding: 15px 10px;
+	   }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) { /* 768 AND MORE*/
 	.nav li a{
-	   	padding: 15px 30px;
+	   	padding: 15px 40px;
 	   }
 }
 @media only screen and (min-width : 820px) { 
 	.nav li a{
-	   	padding: 15px 50px;
+	   	padding: 15px 40px;
 	   }
 }
 @media only screen and (min-width : 900px) { 

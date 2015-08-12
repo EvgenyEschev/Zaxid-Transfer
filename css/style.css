@@ -49,9 +49,11 @@ html.js .loader_inner {
 	top: 50%;
 	position: absolute;
 }
-
+a {
+	color: inherit;
+	text-decoration: none;
+}
 html{
-	font-family: sans-serif;
 	font-size: 16px;
 	height: 100%;
 }
@@ -85,7 +87,7 @@ body {
 	margin-bottom: 0;
 }
 .navbar-default:hover {
-	border-bottom: 2px solid #087070; 
+	border-bottom: 2px solid #027C8B; 
 }
 .navbar .navbar-nav {             /*Centring menu */
 	display: inline-block;
@@ -93,7 +95,7 @@ body {
 } 
 .navbar-default {                                    /*menu main settings*/
 	border-bottom: 2px solid lightgrey;
-	font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+	font-family: 'Arial', sans-serif;
 	text-align: center;
 	border-color: rgba(255,255,255,.8);
 	background-color: transparent;
@@ -103,16 +105,16 @@ body {
 }
 .navbar-default .navbar-header .navbar-brand {                    
 	text-transform: uppercase;
-	font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
-	font-weight: 700;
-	color: #087070;
+	font-family: 'Arial', sans-serif;
+	font-weight: 900;
+	color: #027C8B;
 }
 
 .navbar-default .nav > li>a,
 .navbar-default .nav>li>a:focus {
 	text-transform: uppercase;
-	font-size: 18px;
-	font-weight: 700;
+	font-size: 22px;
+	font-weight: 600;
 	color: white;
 	border-bottom: 4px solid transparent;
 	transition: border-color .5s;
@@ -121,7 +123,7 @@ body {
 .navbar-default .nav > li>a:hover,
 .navbar-default .nav>li>a:focus:hover {
 	color: #087070;
-	border-color: #087070;
+	border-color: #027C8B;
 	transition: color .5s;
 }  
 /*HIDEN MENU*/
@@ -131,15 +133,15 @@ body {
 }
 
 .navbar-default.affix {                                    /*Scrolling mode*/
-	border-color: #087070;
+	border-color: #2C3E50;
 	background-color: #F6F6F6;
 }
 .navbar-default.affix .navbar-header .navbar-brand{
-	color: #087070; 
+	color: #2C3E50; 
 }
 .navbar-default.affix .navbar-header .navbar-brand:hover,
 .navbar-default.affix .navbar-header .navbar-brand:focus {
-	color: #94CCC1;
+	color: #2C3E50;
 }
 
 .navbar-default.affix .nav > li>a,
@@ -150,8 +152,8 @@ body {
 
 .navbar-default.affix .nav > li>a:hover,
 .navbar-default.affix .nav>li>a:focus:hover {
-	color: #087070;
-	border-color: #087070;
+	color: #2C3E50;
+	border-color: #2C3E50;
 	transition: border-color .5s;
 }                                                                         /* End nav */
 
@@ -191,7 +193,7 @@ header{
 	text-align: center;
 }
 .header-caption #mainHeading{
-	font-size: 42px;
+	font-family: 'Tahoma';
 	text-transform: uppercase;
 	}  
 .header-caption #mainDescription{
@@ -231,58 +233,77 @@ background-color: #fff;
 }
 .header-inner .fa-angle-double-down{
 	color: white;
-	-webkit-animation-name: pulse;
-    -moz-animation-name: pulse;
-    -webkit-animation-duration: 1.5s;
-    -moz-animation-duration: 1.5s;
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-timing-function: linear;
 }
 .header-inner .fa-angle-double-down:hover{
 	color: #454545;
 	transition: color .5s;
 }
-@-webkit-keyframes pulse {                             /*pulse transform*/ 
-    0% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-
-    50% {
-        -webkit-transform: scale(1.2);
-        transform: scale(1.2);
-    }
-
-    100% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-}                                             /*End Scroll-down Button*/
+.header-inner .fa-angle-double-down:hover{
+	color: #454545;
+	transition: color .5s;
+}                                           /*End Scroll-down Button*/
 
 
-section hr{                                           /* Start section*/
-	width: 50px;
-	border-top: 2px solid #087070;
+section{                                           /* Start section*/
+	max-width: 90%;
+	margin: 0 auto;
 }
-
-.section-header{
-	color: #087070;
+.section-header h2{
+	color: #2C3E50;
 	text-transform: uppercase;
+	text-align: center;
 	font-size: 40px;
+	font-weight: 800;
 	padding: 10px 15px;
-	margin: 5px;
+	margin: 40px 5px 5px;
 }
-.section-block{
-	background-color grey;
-	border: 1px solid red;
+ h3{
+	text-transform: uppercase;
+	font-size: 26px;
+	font-weight: 700;
+	color: #022F32;
+}
+ h4{
+	color: #027C8B;
+}
+hr{
+	border-top: 1px solid #2C3E50;
+}
+.hr-wrap-small{
+	margin: 0 auto;
+	max-width: 30px;
+}
+.hr-wrap-full{
+	width: 100%;
+	margin-top: 5px;
+}
+.service-block{
 	text-align: center;
 }
-h3 {
-	word-wrap: break-word;
+												/* Cars */
+#car-block{
+	border-radius: 5px;
 }
-                                                     /* End section */
+.fotorama__wrap {
+	margin: 0 auto;
+}
+
+												/* Contacts*/
+#contacts p{
+	color: #022F32;
+	font-size: 22px;
+	font-weight: 700;
+}
+.fa {
+	color: #027C8B;
+}
+.fa:hover{
+	color: #EE514A;
+}
+h1, h2, h3, h4, h5, h6 {
+	word-wrap: break-word;
+}                                                    /* End section */
+
 
 .google-map-wrapper{                                   /* Google Map */
 	width: 100%;
@@ -296,11 +317,17 @@ h3 {
 	height: 400px;
 	border: 0;
 }
+
+
 footer {                                                  /* Start footer */
 	width: 100%;
 	background-color: #022F32;
 	color: #fff;
-	padding: 10px;
+	padding: 0;
+}
+.footer-contacts{
+	vertical-align: baseline;
+	text-align: center;
 }
 .copyright{
 	padding: 5px;
