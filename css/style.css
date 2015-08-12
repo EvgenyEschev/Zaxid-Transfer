@@ -279,8 +279,8 @@ section hr{                                           /* Start section*/
 	border: 1px solid red;
 	text-align: center;
 }
-.section-block>h3{
-	word-wrap: break-word !important;
+h3 {
+	word-wrap: break-word;
 }
                                                      /* End section */
 
