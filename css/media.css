@@ -1,0 +1,131 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	
+	.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-prev, .carousel-control .icon-next {
+    font-size: 20px;
+	}
+
+	.navbar-default {
+	background-color: #F6F6F6;
+	}
+	.navbar-default .nav{
+		width: 100%;
+	}
+	.navbar-default .nav > li>a,
+	.navbar-default .nav>li>a:focus {
+	color: lightslategrey;
+	border-bottom: 2px solid transparent;
+	}
+	.navbar-default .nav > li>a:hover,
+	.navbar-default .nav>li>a:focus:hover {
+	color: #087070;
+	border-color: #087070;
+	transition: border-color .5s;
+} 
+	.navbar-default .navbar-header .navbar-brand {                    
+	color: #087070;
+	}
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+	background-color: #F6F6F6;
+    border-bottom: 1px solid #F6F6F6;
+ 	}
+ 	.navbar-default.affix .nav > li>a,
+.navbar-default.affix .nav>li>a:focus {
+	border-bottom: 2px solid transparent;
+}
+
+.navbar-default.affix .nav > li>a:hover,
+.navbar-default.affix .nav>li>a:focus:hover {
+	border-color: #087070;
+}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	/*Disable Animation on Mobile Devices*/
+	* {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+	#google-map{
+		display: none;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+	  
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) { /* 768 AND MORE*/
+	.nav li a{
+	   	padding: 15px 30px;
+	   }
+}
+@media only screen and (min-width : 820px) { 
+	.nav li a{
+	   	padding: 15px 50px;
+	   }
+}
+@media only screen and (min-width : 900px) { 
+	.nav li a{
+	   	padding: 15px 60px;
+	   }
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	.nav li a{
+	   	padding: 15px 70px;
+	   }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	.nav li a{
+	   	padding: 15px 90px;
+	   }
+}
