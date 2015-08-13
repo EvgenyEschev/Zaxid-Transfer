@@ -1,48 +1,72 @@
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
-
+@media only screen and (max-width : 1200px) { /* 1200 and less */
+	.service-block{
+		margin-bottom: 10px;
+	}
+	.container{
+	width: 90%;
+	}
 }
-
-/* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
-
+@media only screen and (max-width : 1024px) {
+	.navbar-default .nav > li>a {
+	margin: 0 20px;
+	}
 }
-
+@media only screen and (max-width : 860px) {
+	.navbar-default .nav > li>a {
+	margin: 0 10px;
+	}
+}
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 
 	.navbar-default {
-	background-color: #F6F6F6;
+		background-color: #F6F6F6;
 	}
-	.navbar-default .nav{
+	.navbar .navbar-nav {
 		width: 100%;
 	}
 	.navbar-default .nav > li>a,
 	.navbar-default .nav>li>a:focus {
-	color: lightslategrey;
-	border-bottom: 2px solid transparent;
+		color: lightslategrey;
+		border-bottom: 2px solid transparent;
 	}
 	.navbar-default .nav > li>a:hover,
 	.navbar-default .nav>li>a:focus:hover {
-	color: #087070;
-	border-color: #087070;
-	transition: border-color .5s;
-} 
+		color: #087070;
+		border-color: #087070;
+		transition: border-color .5s;
+	} 
 	.navbar-default .navbar-header .navbar-brand {                    
-	color: #087070;
+		color: #087070;
 	}
 	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
-	background-color: #F6F6F6;
-    border-bottom: 1px solid #F6F6F6;
- 	}
- 	.navbar-default.affix .nav > li>a,
-.navbar-default.affix .nav>li>a:focus {
-	border-bottom: 2px solid transparent;
+		background-color: #F6F6F6;
+		border-bottom: 1px solid #F6F6F6;
+	}
+	.navbar-default.affix .nav > li>a,
+	.navbar-default.affix .nav>li>a:focus {
+		border-bottom: 2px solid transparent;
+	}
+	.header-caption{
+	max-width: 80%;
+	top: 25%;
+	}
+	.header-caption #mainHeading{
+		font-size: 50px;
+	}
+	.header-caption #mainDescription{
+		font-size: 20px;
+	}
+	.service-block{
+		margin-bottom: 10px;
+	}
+	.container{
+		width: 100%;
+	}
 }
-}
-
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
 	/*Disable Animation on Mobile Devices*/
@@ -69,60 +93,51 @@
 	#google-map{
 		display: none;
 	}
-}
-
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 320px) {
-
-}
-
-
-/*==========  Mobile First Method  ==========*/
-
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px) {
-.header-caption{
-	max-width: 90%;
-	top: 30%;
-}
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px) {
-}
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px) { /* 768 AND MORE*/
 	.header-caption{
-	max-width: 80%;
+	max-width: 90%;
+	top: 20%;
+	}
+	.header-caption #mainHeading {
+    font-size: 38px;
+	} 
+	.header-caption #mainDescription{
+		font-size: 22px;
+		}            
+}
+@media only screen and (max-width : 320px) {
+	.header-caption{
+	max-width: 90%;
 	top: 35%;
 	}
-	.navbar-nav li a{
-		padding: 14px 25px;
-	}
-@media only screen and (min-width : 850px) { 
-	.navbar-nav li a{
-		padding: 14px 25px;
-	}
-	.navbar-default .nav{
-		margin-left: -50px;
-	}
-}
-@media only screen and (min-width : 900px) { 
-	.navbar-nav li a{
-		padding: 14px 50px;
-	}
+	.header-caption #mainHeading {
+    font-size: 36px;
+	} 
+	.header-caption #mainDescription{
+		font-size: 18px;
+		}  
 }
 
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
-	.navbar-default .nav{
-		margin-left: -120px;
+@media only screen and (max-height : 480px) {/*HEIGHT FOR LANDSCAPE MODE */
+	.header-caption{
+	max-width: 90%;
+	top: 25%;
 	}
+	#mainHeading{
+	font-size: 20px;
+	}  
+	#mainDescription{
+		font-size: 10px;
+		} 
 }
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
-.navbar-default .nav{
-		margin-left: -150px;
+@media only screen and (max-height : 320px) {
+	.header-caption{
+	max-width: 90%;
+	top: 25%;
 	}
+	#mainHeading{
+	font-size: 20px;
+	}  
+	#mainDescription{
+		font-size: 10px;
+		} 
 }

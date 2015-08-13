@@ -53,6 +53,10 @@ a {
 	color: inherit;
 	text-decoration: none;
 }
+hr{
+	border-bottom: 1px solid #087070;
+	margin: 0 auto;
+}
 html{
 	font-size: 16px;
 	height: 100%;
@@ -93,6 +97,9 @@ body {
 	display: inline-block;
 	float: none;
 } 
+.navbar-default .nav > li>a {
+	margin: 0 50px;
+}
 .navbar-default {                                    /*menu main settings*/
 	border-bottom: 2px solid lightgrey;
 	font-family: 'Arial', sans-serif;
@@ -109,7 +116,6 @@ body {
 	font-weight: 900;
 	color: #027C8B;
 }
-
 .navbar-default .nav > li>a,
 .navbar-default .nav>li>a:focus {
 	text-transform: uppercase;
@@ -193,11 +199,16 @@ header{
 	text-align: center;
 }
 .header-caption #mainHeading{
-	font-family: 'Tahoma';
 	text-transform: uppercase;
+	font-family: 'Impact', 'Arial', sans-serif;
+	font-size: 100px;
 	}  
+.header-inner hr{
+	max-width: 50px;
+	border: 1px solid white;
+}
 .header-caption #mainDescription{
-	font-size: 22px;
+	font-size: 30px;
 	}                                                                  /* End header */
 
 .btn{                                                 /*Scroll-down Button*/
@@ -243,21 +254,28 @@ background-color: #fff;
 	transition: color .5s;
 }                                           /*End Scroll-down Button*/
 
-
-section{                                           /* Start section*/
-	max-width: 90%;
+main{
+	width: 100%;
 	margin: 0 auto;
 }
+section{                                           /* Start section*/
+	margin: 0 auto;
+}
+.section-header{
+	width: 100%;
+	background-color: #087070;
+}
 .section-header h2{
-	color: #2C3E50;
+	color: #fff;
 	text-transform: uppercase;
 	text-align: center;
-	font-size: 40px;
+	font-size: 38px;
 	font-weight: 800;
-	padding: 10px 15px;
-	margin: 40px 5px 5px;
+	padding: 15px 15px;
+	margin: 0;
 }
  h3{
+ 	text-align: center;
 	text-transform: uppercase;
 	font-size: 26px;
 	font-weight: 700;
@@ -266,27 +284,40 @@ section{                                           /* Start section*/
  h4{
 	color: #027C8B;
 }
-hr{
-	border-top: 1px solid #2C3E50;
-}
-.hr-wrap-small{
-	margin: 0 auto;
-	max-width: 30px;
-}
-.hr-wrap-full{
-	width: 100%;
-	margin-top: 5px;
+.container{
+	width: 90%;
+	padding: 15px 0;
 }
 .service-block{
+	background-color: #ECF0F1;
+	margin: 0 auto;
+	padding: 5px;
+	border: 1px solid #d1d1d1;
 	text-align: center;
 }
 												/* Cars */
-
+.car-block{
+	background-color: #ECF0F1;
+	border: 1px solid #d1d1d1;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+.car-block hr{
+	width: 90%;
+}
 .fotorama__wrap {
 	margin: 0 auto;
 }
+.fotorama__nav-wrap {
+  position: absolute;
+  bottom: 0;
+  }
+.fotorama--fullscreen .fotorama__nav, .fotorama--fullscreen .fotorama__stage {
+    background: rgba(0, 0, 0, .5) !important;
+}
 
 												/* Contacts*/
+
 #contacts p{
 	color: #022F32;
 	font-size: 22px;
@@ -297,8 +328,10 @@ hr{
 }
 .fa:hover{
 	color: #EE514A;
+	cursor: pointer;
 }
 h1, h2, h3, h4, h5, h6 {
+	margin: 10px 0;
 	word-wrap: break-word;
 }                                                    /* End section */
 
@@ -312,22 +345,19 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 0;
 	margin: 0;
 	width: 100%;
-	height: 400px;
+	height: 300px;
 	border: 0;
 }
 
 
 footer {                                                  /* Start footer */
 	width: 100%;
-	background-color: #022F32;
+	background-color: #087070;
 	color: #fff;
-	padding: 0;
-}
-.footer-contacts{
-	vertical-align: baseline;
-	text-align: center;
+	padding: 5px;
 }
 .copyright{
-	padding: 5px;
+	margin: 0;
 	text-align: center;
+	font-size: 16px;
 }                                                         /* End footer */
