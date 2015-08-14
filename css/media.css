@@ -8,15 +8,25 @@
 	.container{
 	width: 90%;
 	}
+	.navbar .navbar-nav {
+	margin-left: -150px;
+	} 
 }
 @media only screen and (max-width : 1024px) {
-	.navbar-default .nav > li>a {
-	margin: 0 20px;
+	.navbar .navbar-nav {
+	margin-left: -40px;
 	}
-}
-@media only screen and (max-width : 860px) {
+	.header-caption{
+	max-width: 90%;
+	}
+	.header-caption #mainHeading{
+		font-size: 80px;
+	}
+	.header-caption #mainDescription{
+		font-size: 28px;
+	} 
 	.navbar-default .nav > li>a {
-	margin: 0 10px;
+	padding: 15px 30px;
 	}
 }
 /* Small Devices, Tablets */
@@ -27,9 +37,11 @@
 	}
 	.navbar .navbar-nav {
 		width: 100%;
+		margin-left: 0;
 	}
 	.navbar-default .nav > li>a,
 	.navbar-default .nav>li>a:focus {
+		width: 100%;
 		color: lightslategrey;
 		border-bottom: 2px solid transparent;
 	}
@@ -52,7 +64,7 @@
 	}
 	.header-caption{
 	max-width: 80%;
-	top: 25%;
+	top: 35%;
 	}
 	.header-caption #mainHeading{
 		font-size: 50px;
@@ -95,7 +107,7 @@
 	}
 	.header-caption{
 	max-width: 90%;
-	top: 20%;
+	top: 30%;
 	}
 	.header-caption #mainHeading {
     font-size: 38px;

@@ -96,9 +96,10 @@ body {
 .navbar .navbar-nav {             /*Centring menu */
 	display: inline-block;
 	float: none;
+	margin-left: -150px;
 } 
 .navbar-default .nav > li>a {
-	margin: 0 50px;
+	padding: 15px 50px;
 }
 .navbar-default {                                    /*menu main settings*/
 	border-bottom: 2px solid lightgrey;
