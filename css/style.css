@@ -210,7 +210,12 @@ header{
 }
 .header-caption #mainDescription{
 	font-size: 30px;
-	}                                                                  /* End header */
+	}   
+#contact-phone{
+	color: #fff;
+	font-weight: bold;
+	line-height: 2em;
+	}                                                               /* End header */
 
 .btn{                                                 /*Scroll-down Button*/
 	bottom: 20px;
@@ -283,6 +288,9 @@ section{                                           /* Start section*/
 	color: #022F32;
 }
  h4{
+ 	padding: 5px 10px;
+ 	line-height: 1.6em;
+ 	text-align: left;
 	color: #027C8B;
 }
 .container{
@@ -295,6 +303,14 @@ section{                                           /* Start section*/
 	padding: 5px;
 	border: 1px solid #d1d1d1;
 	text-align: center;
+}
+.text-li-italic{
+	font-style: italic;
+}
+span {
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #022F32;
 }
 												/* Cars */
 .car-block{
@@ -333,7 +349,6 @@ section{                                           /* Start section*/
 }
 h1, h2, h3, h4, h5, h6 {
 	margin: 10px 0;
-	word-wrap: break-word;
 }                                                    /* End section */
 
 

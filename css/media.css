@@ -132,7 +132,7 @@
 @media only screen and (max-height : 480px) {/*HEIGHT FOR LANDSCAPE MODE */
 	.header-caption{
 	max-width: 90%;
-	top: 25%;
+	top: 20%;
 	}
 	#mainHeading{
 	font-size: 20px;
@@ -144,7 +144,7 @@
 @media only screen and (max-height : 320px) {
 	.header-caption{
 	max-width: 90%;
-	top: 25%;
+	top: 20%;
 	}
 	#mainHeading{
 	font-size: 20px;
