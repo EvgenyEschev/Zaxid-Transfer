@@ -66,7 +66,6 @@ body {
 	height: 100%;
 	min-width: 320px;
 	margin: 0 auto;
-	position: relative;
 	overflow-x: hidden;
 	background-color: #F6F6F6;
 }
@@ -325,13 +324,10 @@ span {
 .fotorama__wrap {
 	margin: 0 auto;
 }
-.fotorama__nav-wrap {
-  position: absolute;
-  bottom: 0;
-  }
 .fotorama--fullscreen .fotorama__nav, .fotorama--fullscreen .fotorama__stage {
     background: rgba(0, 0, 0, .5) !important;
-}
+  }
+
 
 												/* Contacts*/
 
